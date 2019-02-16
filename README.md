@@ -1,7 +1,7 @@
 # Initial-linux-configs
 Just a simple guide to configure the full development ambiance with Ruby, Rails, Node, ReactJS and React Native.
 
-## System dependencies
+# System dependencies
 
 - Install Linux Dependencies 
 
@@ -99,7 +99,7 @@ rbenv rehash
 rails -v
 ```
 
-### PostgreSQL Configuration:
+# PostgreSQL Configuration:
 
 - The postgres installation doesn't setup a user for you, so you'll need to follow these steps to create a user with permission to create databases. Feel free to replace chris with your username.
 
@@ -114,7 +114,7 @@ sudo -u postgres psql
 postgres=# \password olaviolacerda
 ```
 
-### ReactJS Configuration
+# ReactJS Configuration
 
 - The ReactJS only needs the NodeJS to run, but you can need to install the create-react-app package.
 
@@ -122,7 +122,7 @@ postgres=# \password olaviolacerda
 npm install -g create-react-app -y
 ```
 
-### React Native Configuration
+# React Native Configuration
 
 - Just use the command below to get the React Native CLI.
 
@@ -130,7 +130,7 @@ npm install -g create-react-app -y
 sudo npm install -g react-native-cli
 ```
 
-### Preparing Android Studio Environment 
+# Preparing Android Studio Environment 
 
 - You might need it to run Genymotion or another emulator
 
@@ -141,7 +141,7 @@ sudo apt-get install openjdk-8-jdk
 sudo apt-get install gcc-multilib lib32z1 lib32stdc++6
 ```
 
-# Configuring SDK Android on Linux
+### Configuring SDK Android on Linux
 
  - To configure the Android SDK create a folder called `yourplace/Android/Sdk`. Ex: `~/Android/Sdk`
 
@@ -164,7 +164,7 @@ Now, finish it using that command:
 ~/Android/Sdk/tools/bin/sdkmanager  "platform-tools" "platforms;android-27" "build-tools;27.0.3" 
 ```
 
-# Configuring Genymotion (chosen Android Emulator for React Native development)
+### Configuring Genymotion (chosen Android Emulator for React Native development)
 
 - First, you'll need to install the Virtual Box (don't forget to enable the Virtualization at your BIOS on Motherboard):
 
@@ -182,7 +182,7 @@ chmod +x genymotion-X.X.X_x64.bin
 
  - Then, go to Genymotion Settings at 'ADB' tab, and chose the path of your Android SDK.
  
-### Extras (Tools, etc) 
+# Extras (Tools, etc) 
 
 - Visual Studio Code (https://code.visualstudio.com/docs/setup/linux)
 
