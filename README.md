@@ -67,9 +67,9 @@ ruby -v
 
 ```bash
 git config --global color.ui true
-git config --global user.name "olaviolacerda"
-git config --global user.email "olavio.lacerda@hotmail.com"
-ssh-keygen -t rsa -b 4096 -C "olavio.lacerda@hotmail.com"
+git config --global user.name "username"
+git config --global user.email "username@email.com"
+ssh-keygen -t rsa -b 4096 -C "username@email.com"
 ```
 
 - The next step is to take the newly generated SSH key and add it to your Github account. You want to copy and paste the output of the following command and paste it here(https://github.com/settings/ssh).
@@ -104,14 +104,14 @@ rails -v
 - The postgres installation doesn't setup a user for you, so you'll need to follow these steps to create a user with permission to create databases. Feel free to replace chris with your username.
 
 ```bash
-sudo -u postgres createuser olaviolacerda -s
+sudo -u postgres createuser username -s
 ```
 
 - If you would like to set a password for the user, you can do the following
 
 ```bash
 sudo -u postgres psql
-postgres=# \password olaviolacerda
+postgres=# \password username
 ```
 
 # ReactJS Configuration
