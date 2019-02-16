@@ -136,10 +136,18 @@ sudo npm install -g react-native-cli
 
 - You might need it to run Genymotion or another emulator
 
+- So first, lets add Java JDK dependencies
+
 ```bash
 sudo add-apt-repository ppa:openjdk-r/ppa
 sudo apt-get update
 sudo apt-get install openjdk-8-jdk
+```
+Check your version ```bash java -version ```
+
+-  After checking, install some 32-bits libraries
+
+```bash
 sudo apt-get install gcc-multilib lib32z1 lib32stdc++6
 ```
 
