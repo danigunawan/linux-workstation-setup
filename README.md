@@ -182,7 +182,7 @@ chmod +x genymotion-X.X.X_x64.bin
 
 ***WARNING: Don't forget to change the Genymotion Version.***
 
- - Then, go to Genymotion Settings at 'ADB' tab, and chose the path of your Android SDK.
+ - Then, go to Genymotion Settings at 'ADB' tab, and choose the path of your Android SDK.
  
 # Extras (Tools, etc) 
 
