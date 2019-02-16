@@ -1,4 +1,4 @@
-***ATTENTION: There are some configs and tutorials here extracted from others websites and Github users, as I said, it's the full configuration for my workstation, so use it for the good.***
+***NOTE: There are some configs and tutorials here extracted from others websites and Github users (https://github.com/Rocketseat/ambiente-react-native, https://github.com/leonardoazeredo, Insomnia, Visual Code, Genymotion, Android), as I said, it's the full configuration for my workstation, so use it for the good.***
 
 # Initial-linux-configs
 A personal guide to configure the full development environment with Ruby, Rails, Node, Postgres, ReactJS and React Native.
@@ -180,7 +180,7 @@ chmod +x genymotion-X.X.X_x64.bin
 ./genymotion-X.X.X_x64.bin
 ```
 
-***ATTENTION: Don't forget to change the Genymotion Version.***
+***WARNING: Don't forget to change the Genymotion Version.***
 
  - Then, go to Genymotion Settings at 'ADB' tab, and chose the path of your Android SDK.
  
