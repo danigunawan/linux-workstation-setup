@@ -1,5 +1,7 @@
+***ATTENTION: There are some configs and tutorials here extracted from others websites and Github users, as I said, it's the full configuration for my workstation, so use it for the good.***
+
 # Initial-linux-configs
-Just a simple guide to configure the full development ambiance with Ruby, Rails, Node, ReactJS and React Native.
+A personal guide to configure the full development environment with Ruby, Rails, Node, Postgres, ReactJS and React Native.
 
 # System dependencies
 
@@ -9,7 +11,7 @@ Just a simple guide to configure the full development ambiance with Ruby, Rails,
 sudo apt-get update
 sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn postgresql-common postgresql-9.5 libpq-dev
 ```
-- Install Node.js 8.x and some development tools to build native addons
+- Install Node.js 10.x and some development tools to build native addons
   
 ```bash
 curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
