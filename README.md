@@ -5,6 +5,20 @@ A personal guide to configure the full development environment with Ruby, Rails,
 
 # System dependencies
 
+- Adds yarn to the repositories
+
+```bash
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+```
+
+- Adds PostgreSQL to the repositories
+
+```bash
+sudo sh -c "echo 'deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
+wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
+```
+
 - Install Linux Dependencies 
 
 ```bash
@@ -18,25 +32,11 @@ curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
 sudo apt install nodejs gcc g++ make -y
 ```
 
-- Adds yarn to the repositories
-
-```bash
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-```
-
 - To install the Yarn package manager, run:
 ```bash
 curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt-get update && sudo apt-get install yarn
-```
-
-- Adds PostgreSQL to the repositories
-
-```bash
-sudo sh -c "echo 'deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
-wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
 ```
 
 - Install rbenv for Ruby Environment
