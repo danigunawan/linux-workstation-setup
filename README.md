@@ -1,4 +1,4 @@
-# initial-linux-configs
+# Initial-linux-configs
 Just a simple guide to configure the full development ambiance with Ruby, Rails, Node, ReactJS and React Native.
 
 ## System dependencies
@@ -182,6 +182,25 @@ chmod +x genymotion-X.X.X_x64.bin
 
  - Then, go to Genymotion Settings at 'ADB' tab, and chose the path of your Android SDK.
  
- 
+### Extras (Tools, etc) 
+
+- Visual Studio Code (https://code.visualstudio.com/docs/setup/linux)
+
+- Insomnia (REST Client) (https://support.insomnia.rest/article/23-installation#ubuntu)
+
+```bash
+# Add to sources
+echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" \
+    | sudo tee -a /etc/apt/sources.list.d/insomnia.list
+
+# Add public key used to verify code signature
+wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc \
+    | sudo apt-key add -
+
+# Refresh repository sources and install Insomnia
+sudo apt-get update
+sudo apt-get install insomnia
+```
+
 
 
