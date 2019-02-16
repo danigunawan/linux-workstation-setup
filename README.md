@@ -121,7 +121,7 @@ postgres=# \password username
 - The ReactJS only needs the NodeJS to run, but you can need to install the create-react-app package.
 
 ```bash
-npm install -g create-react-app -y
+sudo npm install -g create-react-app -y
 ```
 
 # React Native Configuration
