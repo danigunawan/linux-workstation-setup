@@ -202,19 +202,27 @@ For VSCode extensions, I use those Settings:
 
 ```json
 {
-    "editor.fontFamily": "Fira Code, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+     "editor.fontFamily": "Fira Code, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontSize": 12,
     "editor.fontLigatures": true,
     "editor.formatOnSave": true,
     "editor.formatOnPaste": false,
     "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "One Dark Pro Bold"
+    "workbench.colorTheme": "One Dark Pro Bold",
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": true,
+    "editor.occurrencesHighlight": false,
+    "editor.selectionHighlight": false
 }
 ```
 
 And those Extensions, just put at Terminal: 
 ```bash
 code --install-extension blanu.vscode-styled-jsx
+code --install-extension cliffordfajardo.hightlight-selections-vscode
 code --install-extension HookyQR.beautify
 code --install-extension jpoissonnier.vscode-styled-components
 code --install-extension mrmlnc.vscode-scss
