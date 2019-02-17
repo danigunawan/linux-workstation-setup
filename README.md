@@ -194,6 +194,8 @@ chmod +x genymotion-X.X.X_x64.bin
  
 # Extras (Tools, etc) 
 
+- Fira Code ( https://github.com/tonsky/FiraCode)
+
 - Visual Studio Code (https://code.visualstudio.com/docs/setup/linux)
 
 For VSCode extensions, I use those Settings: 
@@ -210,7 +212,7 @@ For VSCode extensions, I use those Settings:
 }
 ```
 
-And those Extensions: 
+And those Extensions, just put at Terminal: 
 ```bash
 code --install-extension blanu.vscode-styled-jsx
 code --install-extension HookyQR.beautify
