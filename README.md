@@ -143,7 +143,7 @@ sudo add-apt-repository ppa:openjdk-r/ppa
 sudo apt-get update
 sudo apt-get install openjdk-8-jdk
 ```
-Check your version ```bash java -version ```
+Check your version `java -version `
 
 -  After checking, install some 32-bits libraries
 
