@@ -196,6 +196,34 @@ chmod +x genymotion-X.X.X_x64.bin
 
 - Visual Studio Code (https://code.visualstudio.com/docs/setup/linux)
 
+For VSCode extensions, I use those Settings: 
+
+```json
+{
+    "editor.fontFamily": "Fira Code, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontSize": 12,
+    "editor.fontLigatures": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "One Dark Pro Bold"
+}
+```
+
+And those Extensions: 
+```bash
+code --install-extension blanu.vscode-styled-jsx
+code --install-extension HookyQR.beautify
+code --install-extension jpoissonnier.vscode-styled-components
+code --install-extension mrmlnc.vscode-scss
+code --install-extension naumovs.color-highlight
+code --install-extension rebornix.ruby
+code --install-extension robertohuertasm.vscode-icons
+code --install-extension rocketseat.RocketseatReactJS
+code --install-extension rocketseat.RocketseatReactNative
+code --install-extension zhuangtongfa.Material-theme
+```
+
 - Insomnia (REST Client) (https://support.insomnia.rest/article/23-installation#ubuntu)
 
 ```bash
