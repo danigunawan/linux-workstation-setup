@@ -1,4 +1,4 @@
-***NOTE: There are some configs and tutorials here extracted from others websites and Github users (https://github.com/Rocketseat/ambiente-react-native, https://github.com/leonardoazeredo, Insomnia, Visual Code, Genymotion, Android), as I said, it's the full configuration for my workstation, so use it for the good.***
+***NOTE: There are some configs and tutorials here extracted from others websites and Github users (https://github.com/Rocketseat/ambiente-react-native, https://github.com/leonardoazeredo, Insomnia, https://code.visualstudio.com/docs, Genymotion, Android), as I said, it's the full configuration for my workstation, so use it for the good.***
 
 # Initial-linux-configs
 A personal guide to configure the full development environment with Ruby, Rails, Node, Postgres, ReactJS and React Native.
@@ -198,11 +198,25 @@ chmod +x genymotion-X.X.X_x64.bin
 
 - Visual Studio Code (https://code.visualstudio.com/docs/setup/linux)
 
+
+*If you have some troubles with VS Code file watcher, follow the steps below:*
+
+```bash
+cat /proc/sys/fs/inotify/max_user_watches
+```
+
+Then, go to `/etc/sysctl.conf` and add this line to the end of the file:
+
+`fs.inotify.max_user_watches=524288`
+
+The new value can then be loaded in by running `sudo sysctl -p`.
+
+
 For VSCode extensions, I use those Settings: 
 
 ```json
 {
-     "editor.fontFamily": "Fira Code, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "Fira Code, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontSize": 12,
     "editor.fontLigatures": true,
     "editor.formatOnSave": true,
@@ -215,7 +229,12 @@ For VSCode extensions, I use those Settings:
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.cursorBlinking": true,
     "editor.occurrencesHighlight": false,
-    "editor.selectionHighlight": false
+    "editor.selectionHighlight": false,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true
+    }
 }
 ```
 
@@ -223,7 +242,6 @@ And those Extensions, just put at Terminal:
 ```bash
 code --install-extension blanu.vscode-styled-jsx
 code --install-extension cliffordfajardo.hightlight-selections-vscode
-code --install-extension HookyQR.beautify
 code --install-extension jpoissonnier.vscode-styled-components
 code --install-extension mrmlnc.vscode-scss
 code --install-extension naumovs.color-highlight
@@ -233,6 +251,7 @@ code --install-extension rocketseat.RocketseatReactJS
 code --install-extension rocketseat.RocketseatReactNative
 code --install-extension zhuangtongfa.Material-theme
 ```
+
 
 - Insomnia (REST Client) (https://support.insomnia.rest/article/23-installation#ubuntu)
 
