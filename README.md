@@ -5,13 +5,6 @@ A personal guide to configure the full development environment with Ruby, Rails,
 
 # System dependencies
 
-- Adds yarn to the repositories
-
-```bash
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-```
-
 - Adds PostgreSQL to the repositories
 
 ```bash
@@ -25,6 +18,14 @@ wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo ap
 sudo apt-get update
 sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn postgresql-common postgresql-9.5 libpq-dev
 ```
+
+- Adds yarn to the repositories
+
+```bash
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+```
+
 - Install Node.js 10.x and some development tools to build native addons
   
 ```bash
