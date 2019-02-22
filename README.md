@@ -230,7 +230,7 @@ To add the user yourname to the kvm group, you could use:
 sudo adduser yourname kvm
 ```
 
-which adds the user to the group, and check once again with: `grep kvm /etc/group`.
+which adds the user to the group, and check once again with: `grep kvm /etc/group` than reboot.
  
 # Extras (Tools, etc) 
 
