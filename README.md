@@ -193,6 +193,45 @@ chmod +x genymotion-X.X.X_x64.bin
 
  - Then, go to Genymotion Settings at 'ADB' tab, and choose the path of your Android SDK.
  
+### Android Studio ( If you don't want to use Genymotion)
+
+-First, go to (https://developer.android.com/studio/#downloads) and download IDE for your distribution
+
+- Then, extract the content of folder at `~/Android`
+
+- On the Terminal, navigate to `~/Android/android-studio/bin` and type `sh studio.sh` (just press 'Next' to all questions)
+*you can add the open IDE at your dock*
+
+- Now, on the IDE wait for the Android to sync the go to `Tools > AVD Manager > Create Virtual Device`
+
+Chose the best model to you, then install the Android Version that you need and open your emulator.
+
+***Android Studio: /dev/kvm device permission denied***
+- First 
+```bash
+  sudo apt install qemu-kvm -y 
+```
+To check the ownership of `/dev/kvm` use:
+
+```bash
+ls -al /dev/kvm
+```
+
+The user was root, the group kvm. To check which users are in the kvm group, use:
+```bash
+grep kvm /etc/group
+```
+This would return  `kvm:x:some_number:`
+
+*As there is nothing rightwards of the final :, there are no users in the kvm group.*
+
+To add the user yourname to the kvm group, you could use:
+```bash
+sudo adduser yourname kvm
+```
+
+which adds the user to the group, and check once again with: `grep kvm /etc/group`.
+ 
 # Extras (Tools, etc) 
 
 - Fira Code ( https://github.com/tonsky/FiraCode)
