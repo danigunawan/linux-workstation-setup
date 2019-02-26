@@ -130,7 +130,7 @@ sudo npm install -g create-react-app -y
 - Just use the command below to get the React Native CLI.
 
 ```bash
-sudo npm install -g react-native-cli
+sudo npm install -g react-native-cli -y
 ```
 
 # Preparing Android Studio Environment 
@@ -142,8 +142,14 @@ sudo npm install -g react-native-cli
 ```bash
 sudo add-apt-repository ppa:openjdk-r/ppa
 sudo apt-get update
+```
+
+- Than, type this
+
+```bash
 sudo apt-get install openjdk-8-jdk
 ```
+
 Check your version `java -version `
 
 -  After checking, install some 32-bits libraries
